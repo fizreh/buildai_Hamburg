@@ -122,12 +122,12 @@ input[type='number'] {
   background-color: #E54958;
   box-shadow: var(--box-shadow);
   color:black;
-  border: 0;
+  border-radius: 5%;
   display: block;
   font-size: 16px;
   margin: 10px 0 30px;
   padding: 10px;
-  width: 25%;
+  width: 15%;
   border-style: double;
   border-color: black;
 }
@@ -206,8 +206,9 @@ input[type='number'] {
   align-items: left;
   padding-top: 0%;
   vertical-align: middle;
-  margin: -1px;
-  padding-left:200px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left:180px;
 
 }
 
