@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "buildai-hamburgusers",
     "public": "build",
+    "site" : "buildai-hamburgusers",
     "ignore": [
       "firebase.json",
       "**/.*",
