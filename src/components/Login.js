@@ -103,11 +103,11 @@ Firebase.initializeApp(config);
         <div>
           <div className = "mainHeading">
                <h3>Bitte geben Sie Ihren Namen und Ihre E-Mail-Adresse ein</h3>
-               {isLoading? null : <h1>Vielen Dank!</h1>}
+               {isLoading? null : <p className = "p">Danke für Ihre Teilnahme! Wir werden uns in Kürze bei Ihnen melden.</p>}
                </div>
       <form onSubmit = {onSubmit} id= "create-form-control" >
         <div className="form-control">
-          <div className = "textbox">
+          <div className = "textbox" >
           <input id='name' type="text"  value = {text}  placeholder="David Johns" onChange = {(e)=>setText(e.target.value)}/>
           <br></br>
           <input id='email' type="text" value = {email}  placeholder="123@abc.com" onChange = {(e)=>setEmail(e.target.value)} />
@@ -123,7 +123,7 @@ Firebase.initializeApp(config);
             label="Interessiert an einer schnellen Umfrage (dauert 2 Minuten)"
           />
           <FormControlLabel
-            control={<Checkbox name="interviews" checked = {interview} onClick = {handleInterviewChange} />}
+            control={<Checkbox name="interviews" checked = {interview} onClick = {handleInterviewChange}/>}
             label="Interessiert an einem Interview (dauert 15 Minuten)"
           />
           </div>
